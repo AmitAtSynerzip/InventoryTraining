@@ -1,0 +1,28 @@
+<div class="container">
+
+    <div class="panel-body">
+        <form id="invoiceForm" name="invoiceForm" class="form-horizontal" role="form">
+
+            <label>Item Name:</label><input id="itemName" type="text" class="form-control" name="itemName" value=""
+                                            ng-model="newInvoice.item.name" required>
+
+            <label>Item Price:</label> <input id="itemCost" type="text" class="form-control" name="itemCost" value=""
+                                              ng-model="newInvoice.item.cost" required>
+
+            <label>Select Quantity</label>
+            <select class="form-control" ng-model="newInvoice.quantity" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+
+            <button class="btn btn-primary" ng-click="AddItem()">Add Item</span></button>
+            <hr>
+            <label>Total Price</label>
+            <input type="text" class="form-control" value="" ng-model="newInvoice.totalCost" required>
+
+            <button class="btn btn-primary" ng-click="createInvoice()">Create Invoice</button>
+        </form>
+    </div>
+
+</div>
