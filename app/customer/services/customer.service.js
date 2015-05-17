@@ -7,7 +7,7 @@ angular.module('customer')
             customers:[
 
             ],
-            addCustomer: function(customer){
+            saveCustomer: function(customer){
                 this.customers.push(customer);
             }
         });

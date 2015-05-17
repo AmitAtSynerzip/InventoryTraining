@@ -6,7 +6,7 @@ angular.module('customer')
 
         $scope.createCustomer = function(){
             $scope.calulatedId = customerFactory.customers.length + 1;
-            customerFactory.addCustomer({'id': $scope.calulatedId, 'name': $scope.newCust.name, 'city': $scope.newCust.city });
+            customerFactory.saveCustomer({'id': $scope.calulatedId, 'name': $scope.newCust.name, 'city': $scope.newCust.city });
             resetCustForm();
         }
 

@@ -11,8 +11,8 @@ angular.module('invoice')
                 url:"/Home",
                 templateUrl: "app/invoice/views/home.html"
             })
-            .state('addCustomer', {
-                url:"/addCustomer",
+            .state('newCustomer', {
+                url:"/newCustomer",
                 templateUrl: "app/customer/views/addcustomer.html",
                 controller: "customerCtrl"
             })

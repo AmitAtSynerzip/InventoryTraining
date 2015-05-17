@@ -5,10 +5,10 @@
         <div class="panel-body">
             <form id="customerForm" name="customerForm" class="form-horizontal" role="form">
                 Name:<input id="custName" type="text" class="form-control" name="custName" value="" ng-model="newCust.name" style="width: 545px" required>
-                City :<input id="custCity" type="text" class="form-control" name="custCity" value="" ng-model="newCust.city" style="width: 545px" required>
-                </div>
+                Address 1 :<input id="custCity" type="text" class="form-control" name="custCity" value="" ng-model="newCust.city" style="width: 545px" required>
+                Address 2 :<input id="custAdd2" type="text" class="form-control" name="custAdd2" value="" ng-model="custAdd2.city" style="width: 545px" required>
 
-                <button class="btn btn-primary" ng-click="createCustomer()">Create </button>
+                <button class="btn btn-primary" style="width: 85px;height: 35px;position: relative; left: 470px" ng-click="saveCustomer()">Submit </button>
 
             </form>
         </div>
